@@ -133,6 +133,10 @@ section {
 }
 
 .skill {
+    object-fit: cover;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
     background: var(--gray);
     border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -175,9 +179,11 @@ section {
     padding: 20px 0;
 }
 
-#portfolio img {
-    width: 100%;
-    height: 350px;
+#projects img {
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 200px;
     cursor: pointer;
     border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -212,5 +218,5 @@ textarea {
     .contact-bg {
         height: 40vh;
     }
-
+    
 }
