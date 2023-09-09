@@ -193,6 +193,12 @@ section {
     object-fit: cover;
 }
 
+#projects .container{
+    position: relative;
+    display: flexbox;
+    align-items: center;
+}
+
 #gallery-modal .modal-img {
     width: 100%;
 }
