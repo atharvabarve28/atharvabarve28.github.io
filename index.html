@@ -1,5 +1,3 @@
-<!-- Start of project -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,330 +7,1213 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atharva Barve</title>
   <link rel="icon" type="" href="https://em-content.zobj.net/source/microsoft-teams/337/fire_1f525.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/style.css">
 
+  <!--
+    - custom css link
+  -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top" id="mainNavbar">
-      <div class="container">
-        <a class="navbar-brand" style="color: white;">Atharva Barve</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="bi bi-list text-white fs-1"></span>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Atharva Barve</h1>
+
+          <p class="title">Web developer, Graphics Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:1062221080@mitwpu.edu.in" class="contact-link">1062221080@mitwpu.edu.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 92844 *****" class="contact-link">+91 92844 *****</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">April 28, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sinhgad Road, Pune</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/atharvabarve28/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.github.com/atharvabarve28/" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/atharvabarve28/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.snapchat.com/atharvabarve28/" class="social-link" target="_blank">
+              <ion-icon name="logo-snapchat"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Web developer from Maharashtra, India. Learning in web development and Graphics Designing.
+            I enjoy
+            turning complex problems into simple solutions.
+            <br>
+            Know how to work in Frontend, Backend, and database development simultaneously.
+          </p>
+
+          <!-- <p>
+            
+          </p> -->
+
+          <!-- <div class="col-md-7 d-flex flex-column justify-content-center">
+            <div class="hero-content px-lg-5">
+              <p>
+                &#8226; Expertise in Frontend, Backend, and database development.
+                <br>
+                &#8226; Strong problem-solving skills.
+                <br>
+                &#8226; Keen attention to detail.
+                <br>
+                &#8226; Effective communication abilities.
+                <br>
+              </p>
+              <a href="#contact" class="btn btn-primary me-2">Contact</a>
+              <a href="assets/docs/Resume_AtharvaBarve.pdf" class="btn btn-outline-primary px-4" download><i
+                  class="bi bi-arrow-down-circle-fill me-2"></i>CV</a>
+            </div>
+          </div> -->
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+
+                <p class="service-item-text">
+                  High-quality website design and Development.
+                </p>
+              </div>
+
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Projects</a>
-            </li>
-            <li>
-              <!-- blank -->
-            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li> -->
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li> -->
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li> -->
+
           </ul>
 
-        </div>
-      </div>
-    </nav>
-  </header>
+        </section>
 
-  <section id="hero">
-    <div class="container">
-      <h1 class="text-center mt-5 fw-bold">I am <span class="typer"></span></h1>
-      <div class="row">
-        <div class="col-md-1 social d-none d-md-flex flex-column justify-content-center">
-          <a href="https://www.github.com/atharvabarve28/" target="_blank"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/atharvabarve28/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/atharvabarve28/" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.twitter.com/atharvabarve28/" target="_blank"><i class="bi bi-twitter"></i></a>
-          <a href="https://www.snapchat.com/atharvabarve28/" target="_blank"><i class="bi bi-snapchat"></i></a>
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-        <div class="col-md-4">
-          <img src="assets/profilePic/ab.jpg" alt="me" class="img-fluid mt-5 ms-lg-4">
-        </div>
-        <div class="col-md-7 d-flex flex-column justify-content-center">
-          <div class="hero-content px-lg-5">
-            <p>
-              &#8226; Expertise in Frontend, Backend, and database development.
-              <br>
-              &#8226; Strong problem-solving skills.
-              <br>
-              &#8226; Keen attention to detail.
-              <br>
-              &#8226; Effective communication abilities.
-              <br>
-            </p>
-            <a href="#contact" class="btn btn-primary me-2">Contact</a>
-            <a href="assets/docs/Resume_AtharvaBarve.pdf" class="btn btn-outline-primary px-4" download><i
-                class="bi bi-arrow-down-circle-fill me-2"></i>CV</a>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="about">
-    <div class="container">
-      <div class="section-title">
-        <h3 class="text-center fw-bold main-title">About Me</h3>
-        <p class="text-center fw-bold ms-3 ps-4 sub-title">Who am I?</p>
-      </div>
-      <div class="row">
-        <div class="col-md-12 col-lg-5">
-          <img src="assets/profilePic/ab.jpg" alt="about me" class="img-fluid rounded-2">
-        </div>
-        <div class="col-md-12 col-lg-7  gx-5 mt-3">
-          <p>I am a developer with expertise in creating both the visual part of websites (Frontend), the
-            behind-the-scenes functionality (Backend), and managing data (databases). I'm motivated by a strong desire
-            to come up with creative and effective solutions that help businesses succeed. I'm good at solving problems,
-            paying close attention to the little details, and communicating effectively.</p>
-          <!-- <a href="#" class="btn btn-primary">Read More</a> -->
-          <div class="row mt-5 text-center exp">
-            <div class="col-6 col-lg-3">
-              <div class="d-flex justify-content-center">
-                <h4 class="fw-boldu exp-number" data-val="13">0</h4>
-                <h5 class="mt-4 ps-1">+</h5>
-              </div>
-              <p>experience</p>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MIT World Peace University</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Pursuing my Masters in Computer Applications.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sinhgad College of Science</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Completed my Bachelors in Computer Applications.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sinhgad Institute</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Completed my Higher Secondary Education in Science Stream PCME.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-            <div class="col-6 col-lg-3">
-              <div class="d-flex justify-content-center">
-                <h4 class="fw-boldu exp-number" data-val="13">0</h4>
-                <h5 class="mt-4 ps-1">+</h5>
-              </div>
-              <p>Projects</p>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="d-flex justify-content-center">
-                <h4 class="fw-boldu exp-number" data-val="157">0</h4>
-                <h5 class="mt-4 ps-1">+</h5>
-              </div>
-              <p>Customers</p>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="d-flex justify-content-center">
-                <h4 class="fw-boldu exp-number" data-val="13">0</h4>
-                <h5 class="mt-4 ps-1">+</h5>
-              </div>
-              <p>Awards</p>
-            </div>
+
+            <h3 class="h3">Internship</h3>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="skills">
-    <div class="container">
-      <div class="section-title">
-        <h3 class="text-center fw-bold main-title">My Skills</h3>
-        <p class="text-center fw-bold ms-1 ps-3 sub-title">What do I know?</p>
-      </div>
-      <div class="row gap-3 justify-content-center">
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-          <!-- progress bar -->
+          <ol class="timeline-list">
 
-          <!-- <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar" style="width: 80%">80%</div>
-          </div>-->
+            <li class="timeline-item">
 
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-        <div class="col-4 col-lg-2 text-center p-3 skill">
-          <img src="assets/skill/html.png" alt="html">
-          <!-- <h5>HTML</h5> -->
-        </div>
-      </div>
-    </div>
-  </section>
+              <h4 class="h4 timeline-item-title">Full Stack Intern</h4>
 
-  <section id="skills2">
-    <div class="container">
-      <div class="section-title">
-        <h3 class="text-center fw-bold main-title">My Services</h3>
-        <p class="text-center fw-bold ms-3 ps-3 sub-title">What am I oding?</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 service-box text-center mt-3">
-          <img src="assets/skill/html.png" class="img-fluid mb-3" alt="web design">
-          <h3 class="fw-bold mb-2">Web Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus tempora tempore fuga, quis natus
-            dolore vero? Inventore illum autem, obcaecati sint nisi nemo laborum accusantium unde nihil perspiciatis
-            impedit!</p>
-        </div>
-        <div class="col-lg-4 service-box text-center mt-3">
-          <img src="assets/skill/html.png" class="img-fluid mb-3" alt="web design">
-          <h3 class="fw-bold mb-2">Web Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus tempora tempore fuga, quis natus
-            dolore vero? Inventore illum autem, obcaecati sint nisi nemo laborum accusantium unde nihil perspiciatis
-            impedit!</p>
-        </div>
-        <div class="col-lg-4 service-box text-center mt-3">
-          <img src="assets/skill/html.png" class="img-fluid mb-3" alt="web design">
-          <h3 class="fw-bold mb-2">Web Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus tempora tempore fuga, quis natus
-            dolore vero? Inventore illum autem, obcaecati sint nisi nemo laborum accusantium unde nihil perspiciatis
-            impedit!</p>
-        </div>
-      </div>
-    </div>
-  </section>
+              <span>May 2023 — Aug 2023</span>
 
-  <section id="projects">
-    <div class="container">
-      <div class="section-title">
-        <h3 class="text-center fw-bold main-title">My Portfolio</h3>
-        <p class="text-center fw-bold ms-4 ps-4 sub-title">What did I do?</p>
-      </div>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
-        <div class="col">
-          <img src="assets/skill/html.png" class="gallery-item image-fluid" alt="">
-        </div>
-        <div class="col">
-          <img src="assets/skill/html.png" class="gallery-item image-fluid" alt="">
-        </div>
-        <div class="col">
-          <img src="assets/skill/html.png" class="gallery-item image-fluid" alt="">
-        </div>
-        <div class="col">
-          <img src="assets/skill/html.png" class="gallery-item image-fluid" alt="">
-        </div>
-        <div class="col">
-          <img src="assets/skill/html.png" class="gallery-item image-fluid" alt="">
-        </div>
-        <div class="col">
-          <img src="assets/skill/html.png" class="gallery-item image-fluid" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
+              <p class="timeline-text">
+                Worked as a Full Stack Intern at SK AI Technologies and Solutions.
+              </p>
 
-  <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="01.jpg" class="modal-img img-fluid" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
+            </li>
 
-  <section id="contact">
-    <div class="container">
-      <div class="section-title">
-        <h3 class="text-center fw-bold main-title">Contact Me</h3>
-        <p class="text-center fw-bold ms-4 ps-4 sub-title">DM or email me!</p>
-      </div>
-      <div class="row gx-5">
-        <div class="col-lg-6 text-center">
-          <div class="contact-bg d-flex flex-column justify-content-center rounded-3">
-            <h3 class="py-3">Get in touch!</h3>
-            <div class="contact-info d-flex flex-column gap-1 text-center">
-              <a href="tel:+9284429200" class="text-white"><i class="bi bi-telephone-fill me-2"></i>999-999-9999</a>
-              <a href="mailto:1062221080@mitwpu.edu.in" class="text-white"><i
-                  class="bi bi-envelope me-2"></i>atharvabarve02@gmail.com</a>
-              <a href="#" class="text-white"><i class="bi bi-geo-alt-fill me-2"></i>Sinhgad Road, Pune</a>
+            <!-- <li class="timeline-item">
 
-            </div>
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li> -->
+
+          </ol>
+
+        </section>
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
           </div>
-        </div>
-        <div class="col-lg-6">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="Name" placeholder="Your Name">
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://pdturf.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="TurfBooking" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Turf Booking</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27888.49043645452!2d73.8095144653954!3d18.48105319660895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295732694be13%3A0x777f734dea1cbe7a!2sSinhgad%20Rd%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700941237056!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input
+                disabled>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input
+                disabled>
             </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="Email" placeholder="Your Email Address">
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="subject" placeholder="Subject">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" placeholder="Enter Your Message" id="floatingTextarea" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send <i class="fa fa-paper-plane"
-                aria-hidden="true"></i></button>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required disabled
+              data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
           </form>
-        </div>
-      </div>
+
+        </section>
+
+      </article>
+
     </div>
-  </section>
 
-  <footer class="mt-5">
-    <div class="container">
-      <div class="footer-social d-flex justify-content-center gap-3 text-center mt-3">
-        <a href="https://www.github.com/atharvabarve28/" class="text-white" target="_blank"><i
-            class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/atharvabarve28/" class="text-white" target="_blank"><i
-            class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/atharvabarve28/" class="text-white" target="_blank"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://www.twitter.com/atharvabarve28/" class="text-white" target="_blank"><i
-            class="bi bi-twitter"></i></a>
-        <a href="https://www.snapchat.com/atharvabarve28/" class="text-white" target="_blank"><i
-            class="bi bi-snapchat"></i></a>
-      </div>
-      <div class="footer-copyright text-center mt-3 mt-lg-3">
-        <p>© Copyright 2023 Atharva Barve</p>
-      </div>
-    </div>
-  </footer>
+  </main>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
